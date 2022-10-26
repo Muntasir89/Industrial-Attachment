@@ -96,12 +96,22 @@ body{
   line-height: 25px;
 }
 
+.wrapper .main_content .title{
+  margin-left: 28px;
+  margin-top: 8px;
+  font-size: 25px;
+  font-weight: 500;
+}
+
 .wrapper .main_content .info div{
-  margin: 8px;
+  margin-left: 8px;
+  margin-right: 8px;
+  margin-top: 8px;
   height: 100px;
   min-width: 200px !important;
   padding-top: 5px;
   display: flex;
+  text-align: center;
   align-items: center;
   justify-content: center;
   font-family: Arial, sans-serif !important;
