@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reservation Form</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <div class="main">
+      <h2>Reservation Form</h2>
+      <form>
+        <label>Customer Name</label>
+        <br>
+        <input type="text" name="fname" id="name"
+        placeholder="Enter Customer Name">
+        <br><br>
+
+        <label>Number of customer</label>
+        <br>
+        <input type="number" name="number" id="numberofcustomer">
+        <br><br>
+
+        <label>Choose Reservation Date</label>
+        <br>
+        <input type="date" name="date" id="date">
+        <br><br>
+
+        <label for="Booking">Booking For:</label>
+        <br>
+        <select id="booking">
+          <option value="Lunch">Lunch</option>
+          <option value="Dinner">Dinner</option>
+        </select>
+        <br><br>
+
+        <button type="submit" value="Submit"  name="submit" id="submit">Submit</button>
+        
+      </form>   
+  </div>
+
+</body>
+</html>
