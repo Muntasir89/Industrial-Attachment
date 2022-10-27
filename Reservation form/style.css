@@ -7,62 +7,42 @@ body{
   font-family: sans-serif;
 }
 
-
-div.main{
-  width: 400px;
-  height: 550px;
-  background: rgba(0,0,0,0.4);
+.login-box{
+  width: 320px;
+  height: 500px;
+  background: rgba(0, 0, 0, 0.4);
   color: #fff;
-  top: 22%;
-  left:40%;
+  top: 50%;
+  left: 50%;
   position: absolute;
+  transform: translate(-50%,-50%);
   box-sizing: border-box;
   border-radius: 10px;
   padding: 70px 30px;
-
 }
 
 
-h2{
+h1{
+  margin: 0;
+  padding: 0 0 20px;
   text-align: center;
+  font-size: 22px;
 }
 
-
-label{
-  font-family: sans-serif;
-  font-size: 20px;
+.login-box p{
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
 }
 
-input#name{
-  /* width: 300px;
-  border: 1px solid #ddd;
-
-  border-radius: 3px;
-  outline: 0;
-  padding: 7px;
-  background-color: #fff;
-  box-shadow: inset 1px 1px 5px rgba(0,0,0,0.3);
-  opacity: 1; */
-
-    border: none;
-    border-bottom: 1px solid #fff;
-    background: transparent;
-    outline: none;
-    height: 40px;
-    color: #fff;
-    font-size: 16px;
-    opacity: 1;
+.login-box input{
+  width: 100%;
+  margin-bottom: 20px;
 }
 
-input#numberofcustomer{
-  /* width: 300px;
-  border: 1px solid #ddd;
-  border-radius: 3px;
-  outline: 0;
-  padding: 7px;
-  background-color: #fff;
-  box-shadow: inset 1px 1px 5px rgba(0,0,0,0.3);
-  opacity: 1; */
+.login-box input[type="text"], input[type="password"],input[type="date"]
+,input[type="number"],select,select option
+{
   border: none;
   border-bottom: 1px solid #fff;
   background: transparent;
@@ -72,65 +52,34 @@ input#numberofcustomer{
   font-size: 16px;
   opacity: 1;
 }
-
-input#date{
- /*  width: 300px;
-  border: 1px solid #ddd;
-  border-radius: 3px;
-  outline: 0;
-  padding: 7px;
-  background-color: #fff;
-  box-shadow: inset 1px 1px 5px rgba(0,0,0,0.3); */
-
-  border: none;
-  border-bottom: 1px solid #fff;
-  background: transparent;
-  outline: none;
-  height: 40px;
-  color: #fff;
-  font-size: 16px;
-  opacity: 1;
-}
-
-select#booking{
-  /* width: 320px;
-  border: 1px solid #ddd;
-  border-radius: 3px;
-  outline: 0;
-  padding: 7px;
-  background-color: #fff;
-  box-shadow: inset 1px 1px 5px rgba(0,0,0,0.3); */
-
-  border: none;
-  border-bottom: 1px solid #fff;
-  background: transparent;
-  outline: none;
-  height: 40px;
+.login-box input[type="text"]::placeholder, input[type="password"]::placeholder,
+input[type="date"]::placeholder,input[type="number"]::placeholder{
+  opacity: 0.5;
   color: black;
-  font-size: 16px;
-  opacity: 1;
 }
-
-button{
-  margin-left: 50px;
-  width:200px;
-  padding: 7px;
-  font-size: 18px;
-  font-weight: 600;
-  font-family: sans-serif;
-  border: 1px solid;
-  border-radius: 20px;
-  background-color: #594F8D;
-  color: #fff;
+.login-box select{
+  margin-bottom: 20px;
+  width: 100%;
+}
+.login-box select option{
+  opacity: 0.5;
+  color: black;
   
 }
-
-button:hover{
-    cursor: pointer;
-    background: #39dc79;
-    color: #000;
+.login-box input[type="submit"]
+{
+  border: none;
+  outline: none;
+  height: 40px;
+  background: #594F8D;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 20px;
 }
 
-
-
-
+.login-box input[type="submit"]:hover
+{
+  cursor: pointer;
+  background: #39dc79;
+  color: #000;
+}
