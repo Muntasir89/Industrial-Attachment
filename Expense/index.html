@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Expense</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <div class="login-box">
+      <h1>Add Expense</h1>
+      <form>
+        <p>Category</p>
+        <select id="category" required>
+          <option value="others">Others</option>
+          <option value="rent">Rent</option>
+          <option value="accessories">Accessories</option>
+          <option value="breakfast">Breakfast</option>
+          <option value="shopping">Shopping</option>
+          <option value="bill">Bill</option>
+          
+        </select>
+
+        <p>Description</p>
+      
+        <textarea name="text" id="text" placeholder="Write Description"></textarea>
+
+        <p>Price</p>
+
+        <input type="number" name="price" id="price" required placeholder="Enter Price">
+        
+
+        <p>Date</p>
+        
+        <input type="date" name="date" id="date" required>
+
+        
+        <input type="submit" name="submit" value="Submit">
+        
+        
+
+        
+      </form>   
+  </div>
+
+</body>
+</html>
