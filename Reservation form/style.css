@@ -9,7 +9,7 @@ body{
 
 .login-box{
   width: 400px;
-  height: 550px;
+  height: 620px;
   background: #252526;
   color: #fff;
   top: 50%;
@@ -42,7 +42,7 @@ h1{
 }
 
 .login-box input[type="text"], input[type="password"],input[type="date"]
-,input[type="number"],input[type="time"]
+,input[type="number"],input[type="time"],input[type="tel"]
 {
   border: none;
   border-bottom: 1px solid #fff;
@@ -54,7 +54,7 @@ h1{
   opacity: 0.8;
 }
 .login-box input[type="text"]::placeholder, input[type="password"]::placeholder,
-input[type="date"]::placeholder,input[type="number"]::placeholder,input[type="time"]::placeholder{
+input[type="date"]::placeholder,input[type="number"]::placeholder,input[type="time"]::placeholder,input[type="tel"]::placeholder{
 
   color: #fff;
   opacity:0.8;
