@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Side Navigation Bar</title>
+	<link rel="stylesheet" href="style.css">
+    <!--Fontawesome-->
+	<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="sidebar">
+        <ul>
+            <li><a href="#"><i class="fas fa-home"></i>Dashboard</a></li>
+            <li><a href="#"><i class="fas fa-user"></i>Items</a></li>
+            <li><a href="#"><i class="fas fa-address-card"></i>Orders</a></li>
+            <li><a href="#"><i class="fas fa-project-diagram"></i>Receipts</a></li>
+            <li><a href="#"><i class="fas fa-blog"></i>Reservation</a></li>
+            <li><a href="#"><i class="fas fa-address-book"></i>Expense</a></li>
+        </ul> 
+        <div class="social_media">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+    <div class="main_content">
+        <div class="header">
+            <p>Create Order</p> 
+        </div> 
+        <div class="info">
+            <div class="table">
+                <div class="specification">
+                    <div class="search-box">
+                        <input type="text" class="search" placeholder="Search"/>
+                        <button type="submit" class="search-btn">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+                    <div class="dropdown">
+                        <input type="text" class="textBox" placeholder="Dropdown Menu" readonly/>
+                        <div class="option">
+                            <div onclick="show('Option 1')">Option 1</div>
+                            <div onclick="show('Option 2')">Option 2</div>
+                            <div onclick="show('Option 3')">Option 3</div>
+                            <div onclick="show('Option 4')">Option 4</div>
+                        </div>
+                    </div>
+                    <script>
+                        function show(anything){
+                            document.querySelector('.textBox').value = anything;
+                        }
+                        
+                        let dropdown = document.querySelector('.dropdown');
+                        dropdown.onclick = function(){
+                            dropdown.classList.toggle('active')
+                        }
+                    </script>
+                </div>
+                <table id="order">
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Price</th>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Hamburger grande</td>
+                        <td>$250</td>
+                        <td><button class="In-order">In Order</button></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Hamburger grande</td>
+                        <td>$250</td>
+                        <td><button class="add-order">+</button></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="table">
+                Total
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+</body>
+</html>
