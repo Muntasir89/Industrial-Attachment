@@ -239,3 +239,16 @@ body{
     color: white;
     font-weight: bold;
 }
+
+.wrapper .main_content .info .total-board{
+    background-color: #28A745;
+    width: 100%;
+    height: 90px;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.wrapper .main_content .
