@@ -31,12 +31,12 @@
           <a href="#"><i class="fab fa-instagram"></i></a>
       </div>
     </div>
-    <div class="main_content">
-        <div class="header">
+    <div class="main_content container">
+        <div class="header row">
             <p>Create Order</p> 
         </div> 
-        <div class="info">
-            <div class="table">
+        <div class="info row">
+            <div class="table col-sm-6">
                 <div class="specification">
                     <div class="search-box">
                         <input type="text" class="search" placeholder="Search"/>
@@ -75,28 +75,58 @@
                         <td>1</td>
                         <td>Hamburger grande</td>
                         <td>$250</td>
-                        <td><button class="In-order">In Order</button></td>
+                        <td><button class="In-order btn">In Order</button></td>
                     </tr>
                     <tr>
                         <td>2</td>
                         <td>Hamburger grande</td>
                         <td>$250</td>
-                        <td><button class="add-order">+</button></td>
+                        <td><button class="add-order btn">+</button></td>
                     </tr>
                 </table>
+                <nav aria-label="Pagination" class="pagination-block">
+                    <ul class="pagination">
+                      <li class="page-item disabled">
+                        <a class="page-link" href="#" tabindex="-1">Previous</a>
+                      </li>
+                      <li class="page-item"><a class="page-link" href="#">1</a></li>
+                      <li class="page-item active">
+                        <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
+                      </li>
+                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                      <li class="page-item" >
+                        <a class="page-link" href="#">Next</a>
+                      </li>
+                    </ul>
+                  </nav>
             </div>
-            <div class="table">
+            <div class="table col-sm-6">
                 <div class="total-board">
-                    <div>Total $1870.00</div>
+                    <h2>Total $1870.00</h2>
+                    <p>9 Items in Order</p>
                 </div>
-                <div id="total-order">
-
-                </div>
+                <table id="total-list">
+                    <tr>
+                        <th></th>
+                        <th>Product</th>
+                        <th>Units</th>
+                        <th></th>
+                        <th>Total</th>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <td><button class="reload btn">Re</button></td>
+                        <td>HEINEKEN 750ML</td>
+                        <td>3</td>
+                        <td><button class="increase btn">+</button><button class="decrease btn">-</button></td>
+                        <td>$450</td>
+                        <td><Button class="cancel btn">X</Button></td>
+                    </tr>
+                </table>
+                <Button class="submit btn">Submit</Button>
             </div>
         </div>
-        
     </div>
 </div>
-
 </body>
 </html>
