@@ -251,6 +251,7 @@ body{
 .table .total-board p{
   font-size: 15px;
 }
+<<<<<<< HEAD
 
 #total-list{
     margin-top: 10px;
@@ -292,3 +293,5 @@ body{
   position: absolute;
   margin-right: 20px;
 }
+=======
+>>>>>>> d51e23c2663d746174214cf6f06b7160dbc2af47
