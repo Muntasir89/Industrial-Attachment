@@ -218,7 +218,7 @@ body{
     color: white;
 }
 
-#order td, #total-list th, td{
+#order td{
     border-left: 1px solid #b6b6be;
     text-align: center;
 }
@@ -251,22 +251,20 @@ body{
 .table .total-board p{
   font-size: 15px;
 }
-<<<<<<< HEAD
 
 #total-list{
     margin-top: 10px;
     width: 100%;
     border: 1px solid #b6b6be;
-    min-width: 370px;
+    min-width: 270px;
 }
 
-#total-list td .reload{
-  background-color: #28A745 !important;
-  font-weight: bold;
+#total-list tr th, tr td{
+  border: 1px solid #b6b6be !important;
+  text-align: center;
 }
-
 #total-list .increase{
-  background-color: #594F8D;
+  background-color: #28A745;
   margin: 3px;
   font-weight: bold;
 }
@@ -287,11 +285,9 @@ body{
 }
 
 .submit{
+  right: 15px;
   background-color: #28A745 !important;
   margin-top: 10px;
   font-weight: bold;
   position: absolute;
-  margin-right: 20px;
 }
-=======
->>>>>>> d51e23c2663d746174214cf6f06b7160dbc2af47
