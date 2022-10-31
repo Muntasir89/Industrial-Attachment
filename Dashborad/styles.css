@@ -91,21 +91,19 @@ body{
   justify-content: space-between;
 }
 
-.wrapper .main_content .logout{
-  width: 40px;
+.wrapper .main_content .create_user{
+  width: 100px;
   height: 40px;
-  background: white;
-  color: black;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  background: #9186B6;
+  color: white;
   cursor: pointer;
-  border-radius: 50%;
   border: none;
-  border: 1px solid lightblue;
+  border-radius: 22px;
+  font-size: 14px;
+  font-family: Helvetica, sans-serif;
 }
 
-.wrapper .main_content .logout:hover{
+.wrapper .main_content .create_user:hover{
   box-shadow: 2px 2px 3px lightblue;
   border: none;
 }
