@@ -43,11 +43,13 @@ body{
 .wrapper .sidebar ul li a{
   color: #bdb8d7;
   display: block;
+  font-size: 20px;
 }
 
-.wrapper .sidebar ul li a .fas{
+/* .wrapper .sidebar ul li a .fas{
   width: 25px;
-}
+} */
+
 
 .wrapper .sidebar ul li:hover{
   background-color: #594f8d;
@@ -78,12 +80,14 @@ body{
 }
 
 .wrapper .main_content{
-  width: 100%;
-  margin: 10px 10px 10px 210px;
+  
   border: 1px solid #e0e4e8;
   border-radius: 3px;
 }
 
+.wrapper .main_content .container{
+  width: 100%;
+}
 .wrapper .main_content .header{
     background: #fff;
     color: #717171;
@@ -99,6 +103,7 @@ body{
 
 .wrapper .main_content .info{
     display: flex;
+  
 }
 .wrapper .main_content .info .table{
   min-width: 330px;
@@ -270,18 +275,18 @@ body{
 }
 
 #total-list .decrease{
-  background-color: red;
+  background-color: #28A745;
   margin: 3px;
   font-weight: bold;
 }
 
 #total-list .cancel{
   background-color: red;
-  font-weight: bold;
+ 
 }
 
 .pagination-block{
-  margin-top: 10px;
+  margin-top: 50px;
 }
 
 .submit{

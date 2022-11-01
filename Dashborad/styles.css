@@ -43,11 +43,10 @@ body{
 .wrapper .sidebar ul li a{
   color: #bdb8d7;
   display: block;
+  font-size: 20px;
 }
 
-.wrapper .sidebar ul li a .fas{
-  width: 25px;
-}
+
 
 .wrapper .sidebar ul li:hover{
   background-color: #594f8d;
