@@ -91,25 +91,21 @@ body{
   justify-content: space-between;
 }
 
-.wrapper .main_content .logout{
-  font-size: 15px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-left: 20px;
-  padding-right: 20px;
-  background: #ebeef1;
+.wrapper .main_content .create_user{
+  width: 100px;
+  height: 40px;
+  background: #9186B6;
+  color: white;
   cursor: pointer;
   border: none;
-  border-radius: 50px;
-  color: #594F8D;
-  box-shadow: 5px 5px 5px -1px rgba(10, 99, 169, 0.16),
-          -5px -5px 5px -1px rgba(255, 255, 255, 0.70);
-  
+  border-radius: 22px;
+  font-size: 14px;
+  font-family: Helvetica, sans-serif;
 }
 
-.button{
-  margin-left: 900px;
-  width:200px;
+.wrapper .main_content .create_user:hover{
+  box-shadow: 2px 2px 3px lightblue;
+  border: none;
 }
 
 .wrapper .main_content .info{
