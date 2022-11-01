@@ -11,11 +11,15 @@
 
 body{
    background-color: white;
+
 }
 
 .wrapper{
   display: flex;
   position: relative;
+  height: 100vh;
+  
+  
 }
 
 .wrapper .sidebar{
@@ -80,19 +84,18 @@ body{
 }
 
 .wrapper .main_content{
-  
   border: 1px solid #e0e4e8;
   border-radius: 3px;
+
+
 }
 
-.wrapper .main_content .container{
-  width: 100%;
-}
+
 .wrapper .main_content .header{
     background: #fff;
     color: #717171;
-    margin-top: auto;
-    margin-bottom: auto;
+    margin-top: 50px ;
+   
 }
 .wrapper .main_content .header p{
     padding: 10px 0px 10px 10px;
