@@ -14,87 +14,13 @@ body{
 
 }
 
-<<<<<<< HEAD
  .main_content{
-=======
-.wrapper{
-  display: flex;
-  position: relative;
-  height: 100vh;
-  
-  
-}
-
-.wrapper .sidebar{
-  width: 200px;
-  height: 100%;
-  background: #252526;
-  padding: 30px 0px;
-  position: fixed;
-}
-
-.wrapper .sidebar h2{
-  color: #fff;
-  text-transform: uppercase;
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-.wrapper .sidebar ul li{
-  padding: 15px;
-  border-bottom: 1px solid #bdb8d7;
-  border-bottom: 1px solid rgba(0,0,0,0.05);
-  border-top: 1px solid rgba(255,255,255,0.05);
-}    
-
-.wrapper .sidebar ul li a{
-  color: #bdb8d7;
-  display: block;
-  font-size: 20px;
-}
-
-/* .wrapper .sidebar ul li a .fas{
-  width: 25px;
-} */
-
-
-.wrapper .sidebar ul li:hover{
-  background-color: #594f8d;
-}
-    
-.wrapper .sidebar ul li:hover a{
-  color: #fff;
-}
- 
-.wrapper .sidebar .social_media{
-  position: absolute;
-  bottom: 10px;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-}
-
-.wrapper .sidebar .social_media a{
-  display: block;
-  width: 40px;
-  background: #594f8d;
-  height: 40px;
-  line-height: 45px;
-  text-align: center;
-  margin: 0 5px;
-  color: #bdb8d7;
-  border-radius: 5px;
-}
-
-.wrapper .main_content{
->>>>>>> 7d2361c08d7f0361c4d79e39fc818e4d921fbbbb
   border: 1px solid #e0e4e8;
   border-radius: 3px;
   width: 100vw ;
 
 }
 
-<<<<<<< HEAD
  .main_content .header{
     background: #fff;
     color: #717171;
@@ -105,51 +31,25 @@ body{
     padding: 10px 0 0 10px;
     font-family: Helvetica, sans-serif;
     font-size: 18px;
-=======
-
-.wrapper .main_content .header{
-    background: #fff;
-    color: #717171;
-    margin-top: 50px ;
-   
-}
-.wrapper .main_content .header p{
-    padding: 10px 0px 10px 10px;
-    font-family: Helvetica, sans-serif;
-    font-size: 18px;
-    border-bottom: 1px solid #e0e4e8;
-}
-
-.wrapper .main_content .info{
-    display: flex;
-  
->>>>>>> 7d2361c08d7f0361c4d79e39fc818e4d921fbbbb
 }
 
 .content{
-  margin: 10px !important;
-  display: inline-flex;
+  margin: 10px 10px 25px 10px !important;
 }
 
 .table{
   min-width: 330px;
 }
 
-#order{
-    margin-top: 10px;
-    width: 100%;
-    border: 1px solid #b6b6be;
-}
 
 #order th{
     background-color: #594F8D;
     border-left: 1px solid white;
     color: white;
 }
-
-#order td{
-    border-left: 1px solid #b6b6be;
-    text-align: center;
+#order tr th, tr td{
+  border: 1px solid #b6b6be !important;
+  text-align: center;
 }
 
 .btn{
@@ -172,6 +72,7 @@ body{
     width: 100%;
     color: white;
     padding: 20px 0 10px 20px;
+    border-radius: 6px;
 }
 .table .total-board h2{
   font-weight: bold;
@@ -181,7 +82,7 @@ body{
   font-size: 15px;
 }
 
-#total-list{
+#total-list, #order{
     margin-top: 10px;
     width: 100%;
     border: 1px solid #b6b6be;
@@ -210,11 +111,7 @@ body{
 }
 
 .pagination-block{
-<<<<<<< HEAD
   margin-top: 20px;
-=======
-  margin-top: 50px;
->>>>>>> 7d2361c08d7f0361c4d79e39fc818e4d921fbbbb
 }
 
 .submit{
