@@ -43,11 +43,10 @@ body{
 .wrapper .sidebar ul li a{
   color: #bdb8d7;
   display: block;
+  font-size: 20px;
 }
 
-.wrapper .sidebar ul li a .fas{
-  width: 25px;
-}
+
 
 .wrapper .sidebar ul li:hover{
   background-color: #594f8d;
@@ -114,6 +113,8 @@ body{
   line-height: 25px;
 }
 
+
+
 .wrapper .main_content .title{
   margin-left: 28px;
   margin-top: 8px;
@@ -135,6 +136,10 @@ body{
   font-family: Arial, sans-serif !important;
   color: white;
   font-weight: bold;
+}
+
+.nav-item{
+      margin-right: 50px;
 }
 
 #Sales-info{
