@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Side Navigation Bar</title>
+	<title>Create order</title>
 	<link rel="stylesheet" href="style.css">
     <!--Fontawesome-->
 	<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
@@ -15,55 +15,32 @@
 </head>
 <body>
 
-<div class="wrapper">
-    <div class="sidebar">
-        <ul>
-            <li><a href="#"><i class="fas fa-home"></i>Dashboard</a></li>
-            <li><a href="#"><i class="fas fa-user"></i>Items</a></li>
-            <li><a href="#"><i class="fas fa-address-card"></i>Orders</a></li>
-            <li><a href="#"><i class="fas fa-project-diagram"></i>Receipts</a></li>
-            <li><a href="#"><i class="fas fa-blog"></i>Reservation</a></li>
-            <li><a href="#"><i class="fas fa-address-book"></i>Expense</a></li>
-        </ul> 
-        <div class="social_media">
-          <a href="#"><i class="fab fa-facebook-f"></i></a>
-          <a href="#"><i class="fab fa-twitter"></i></a>
-          <a href="#"><i class="fab fa-instagram"></i></a>
-      </div>
-    </div>
-    <div class="main_content container">
-        <div class="header row">
-            <p>Create Order</p> 
-        </div> 
-        <div class="info row">
-            <div class="table col-sm-6">
-                <div class="specification">
-                    <div class="search-box">
-                        <input type="text" class="search" placeholder="Search"/>
-                        <button type="submit" class="search-btn">
-                            <i class="fa fa-search"></i>
-                        </button>
+<div class="main_content container">
+    <div class="header row">
+        <p>Create Order</p> 
+    </div> 
+    <div class="row content">
+        <div class="col-md-6">
+            <div class="row">
+                <div class="input-group col-sm-6 pr-3">
+                    <input type="text" class="form-control" placeholder="Search">
+                    <div class="input-group-append">
+                      <button class="btn btn-success" type="submit">Search</button>
                     </div>
-                    <div class="dropdown">
-                        <input type="text" class="textBox" placeholder="Select" readonly/>
-                        <div class="option">
-                            <div onclick="show('Option 1')">Option 1</div>
-                            <div onclick="show('Option 2')">Option 2</div>
-                            <div onclick="show('Option 3')">Option 3</div>
-                            <div onclick="show('Option 4')">Option 4</div>
-                        </div>
-                    </div>
-                    <script>
-                        function show(anything){
-                            document.querySelector('.textBox').value = anything;
-                        }
-                        
-                        let dropdown = document.querySelector('.dropdown');
-                        dropdown.onclick = function(){
-                            dropdown.classList.toggle('active')
-                        }
-                    </script>
                 </div>
+                <div class="dropdown col-sm-6 p">
+                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                      Dropdown button
+                    </button>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="#">Link 1</a>
+                      <a class="dropdown-item" href="#">Link 2</a>
+                      <a class="dropdown-item" href="#">Link 3</a>
+                    </div>
+                </div>
+            </div>
+            <!--First Table-->
+            <div class="row">
                 <table id="order">
                     <tr>
                         <th>ID</th>
@@ -84,6 +61,8 @@
                         <td><button class="add-order btn">+</button></td>
                     </tr>
                 </table>
+            </div>
+            <div class="row">
                 <nav aria-label="Pagination" class="pagination-block">
                     <ul class="pagination">
                       <li class="page-item disabled">
@@ -100,11 +79,15 @@
                     </ul>
                   </nav>
             </div>
-            <div class="table col-sm-6">
-                <div class="total-board">
+        </div>
+        <div class="col-md-6">
+            <div class="row">
+                <div class="total-board col-sm-12">
                     <h2>Total $1870.00</h2>
                     <p>9 Items in Order</p>
                 </div>
+            </div>
+            <div class="row">
                 <table id="total-list">
                     <tr>
                         <th>Product</th>
@@ -121,9 +104,11 @@
                         <td><Button class="cancel btn">X</Button></td>
                     </tr>
                 </table>
+            </div>
+            <div class="table row">
                 <Button class="submit btn">Submit</Button>
             </div>
-        </div>
+        </div> 
     </div>
 </div>
 </body>
